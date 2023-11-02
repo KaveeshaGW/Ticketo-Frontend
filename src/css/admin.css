@@ -1,0 +1,184 @@
+ 
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  .header {
+    height: 55px; /* Reduce the header height */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Add horizontal padding */
+    background-color: #3D51A9;
+    color: #fff;
+  }
+  
+  .search-bar input {
+    width: 410px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 80%;
+    margin-top: 3%;
+    height: 28px;
+  }
+  
+  .admin-profile {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-left: 90%;
+  }
+  
+  .admin-profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  /* Dashboard Container */
+  .dashboard-container {
+    padding: 20px;
+  }
+  
+  /* Dashboard Cards */
+  .dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .dashboard-card {
+    height: 120px; /* Adjust the height of the cards */
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; /* Center text */
+    font-size: 18px;
+  }
+  
+  /* Dashboard Charts */
+  .dashboard-charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+    height: 420px; /* Increase the height of the cards */
+  }
+  
+  .revenue-chart,
+  .monthly-usage-graph {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .dashboard-cards,
+    .dashboard-charts {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+ 
+/* Station master add form css */
+.admin-form {
+  width: 500px;
+  margin-top: 15%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 680px;
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.form-title{
+  color: #3D51A9;
+}
+
+.admin-form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.admin-form label {
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  margin-left: 10%;
+}
+
+.admin-form input,
+.admin-form select {
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  transition: border-color 0.3s ease-in-out;
+  margin: 0 auto;
+  color: #333;
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.admin-form input:focus,
+.admin-form select:focus {
+  border-color: #007bff;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 14px;
+  position: absolute;
+  bottom: -20px;
+  left: 10%;
+  width: 80%;
+  text-align: right;
+}
+
+.admin-buttons-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 18px;
+  margin-right: 20%;
+}
+
+.admin-form-button,
+.admin-cancel-button {
+  background-color: #3d51a9;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 15px;
+  margin-left: 8px;
+  cursor: pointer;
+  width: 30%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.admin-form-button:hover,
+.admin-cancel-button:hover {
+  background-color: #00153c;
+}
+
+

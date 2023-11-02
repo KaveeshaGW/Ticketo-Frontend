@@ -1,0 +1,93 @@
+.main-container{
+    margin-top: 25px;
+    width: 100%;
+}
+
+.view-all-schdules{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.firstContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.search-box{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+}
+
+.divider{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.train-schedule-part{
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.train-schedule-part :nth-child(2) {
+    text-align: right;
+}
+
+.secnd-main-container{
+    margin-top: 25px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.existing-schedules{
+    padding: 25px;
+}
+
+.adding-schedules{
+    padding: 25px;
+    overflow: auto;
+}
+
+.error-message{
+    color: red;
+}
+
+.button-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(0, 1fr);
+    gap: 10px;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .scheduleSelect{
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+    margin-left: 0;
+    height: 71%;
+  }
